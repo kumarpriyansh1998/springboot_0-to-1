@@ -32,7 +32,7 @@ public class ProjectApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(ProjectApplication.class, args);
-		context.close();
+//		context.close();
 	}
 
 
