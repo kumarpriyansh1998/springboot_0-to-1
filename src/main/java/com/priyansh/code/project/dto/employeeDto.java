@@ -1,6 +1,7 @@
 package com.priyansh.code.project.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.priyansh.code.project.annotations.employeeRoleValidation;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -35,7 +36,7 @@ public class employeeDto {
     @Positive
     private String salary;
 
-    @Pattern(regexp = "^(ADMIN|USER)$")
+    @employeeRoleValidation
     private String role;
 
     @PastOrPresent
